@@ -1,0 +1,119 @@
+* .location-plus-contacts {
+  font-size: 15px;
+}
+a {
+  text-decoration: none;
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 0) and (max-width: 850px) {
+  .contact-us-container {
+    flex-direction: column;
+  }
+}
+.location-plus-contacts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.location-container {
+  flex: 1;
+  padding-left: 60px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+.location-container h5 {
+  flex: 1;
+  padding-right: 10px;
+}
+.address-container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 0) and (max-width: 850px) {
+  .address-container {
+    flex-direction: column;
+  }
+}
+.office-address-icon {
+  margin-right: 10px;
+}
+.office-address-text {
+}
+.contacts-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 60px;
+  padding-right: 10px;
+  flex: 1;
+}
+.contacts-container h5 {
+  flex: 1;
+}
+.contacts {
+  flex: 1;
+}
+.contacts-container .email, .whatsapp {
+  margin-bottom: 20px;
+}
+.contacts-container .icon {
+  margin-right: 10px;
+}
+.icon {
+  color: green;
+}
+.contact-us-form {
+  flex: 1;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.contact-us-form h1 {
+  margin-left: 100px;
+}
+
+#form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+#form input[type="text"], #form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#form input[type="submit"] {
+    width: 100%;
+    background-color: #fc0334;
+    opacity: 0.8;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#form input[type="submit"]:hover {
+    width: 100%;
+    background-color: #fc0334;
+    opacity: 1;
+}

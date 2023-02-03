@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Roboto;
+}
+a {
+  color: #000000;
+}
+.header-container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: #e6f5b4;
+  position: fixed;
+  z-index: 100;
+}
+.company-name {
+  display: flex;
+  height: 70px;
+  width: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fc0334;
+
+  animation: logo-animation 6s infinite;
+}
+/*.company-logo {
+  width: 160px;
+  height: 65px;
+  padding-top: 7px;
+}*/
+@keyframes logo-animation {
+  0%{padding-left: 50px;}
+  100%{padding-left: 10%;}
+}
+.header-free-space {
+  flex: 1;
+}
+.nav-buttons {
+  height: 70px;
+  width: 600px;
+  background: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 10px;
+  background: #e6f5b4;
+}
+.services-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.services-nav-buttons {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  border: 1px solid #fc0334;
+  border-radius: 4px;
+  background: #e6f5b4;
+  padding: 10px;
+  padding-top: 0;
+  padding-bottom: 5px;
+  line-height: 30px;
+  visibility: hidden;
+  transition: visibility 0.5s;
+  z-index: 2;
+}
+.services-container:hover .services-nav-buttons {
+    visibility: visible;
+}
+.nav-buttons a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 17px;
+}
+.nav-buttons a:hover {
+  color: #fc0334;
+  border: 1px solid #fc0334;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 17px;
+  transition: 0.5s;
+}
+.services-nav-buttons a {
+  white-space: nowrap;
+  font-size: 13px;
+}
+.checkbtn {
+  position: absolute;
+  right: 40px;
+  top: 22px;
+  font-size: 30px;
+  vertical-align: middle;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 850px) {
+  .header-container {
+    height: 80px;
+  }
+  .company-logo {
+    width: 45%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .nav-buttons {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 150px;
+    transition: All 0.5s;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 80px;
+    font-size: 20px;
+  }
+  #check:checked ~ .nav-buttons {
+    left: 0;
+  }
+}
+main {
+  padding-top: 78px;
+}
+.service-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.service-background-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.service-background-image img {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 0) and (max-width: 850px) {
+  .service-container {
+    height: 280px;
+  }
+  .service-background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .service-background-image img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.service-background-image div {
+  position: absolute;
+  width: 50%;
+  left: 60px;
+  bottom: 70px;
+  color: white;
+}
+@media (min-width: 850px) {
+  .service-background-image h2 {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .service-background-image p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 0) and (max-width: 850px) {
+  .service-background-image h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .service-background-image p {
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .service-background-image button {
+    font-size: 10px;
+    font-weight: 700;
+    font-stretch: 90%;
+    line-height: 22px;
+    padding-top: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 2px;
+    border-radius: 4px;
+    margin-top: 15px;
+  }
+}
+
+.service-background-image button {
+  font-size: 16px;
+  font-weight: 700;
+  font-stretch: 100%;
+  line-height: 24px;
+  padding-top: 4px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  background-color: #fc0334;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  margin-top: 15px;
+}
+.slideshow-nav {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 2px;
+}
+.slideshow-nav.prev {
+  left: 2px;
+}
+.slideshow-nav.next {
+  right: 2px;
+}
+.slideshow-dots {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+@media (min-width: 850px) {
+  .slideshow-dots .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media (min-width: 0) and (max-width: 850px) {
+  .slideshow-dots .dot {
+    width: 5px;
+    height: 5px;
+    margin: 0 2px;
+  }
+}
+.slideshow-dots .dot {
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+  cursor: pointer;
+}
+.slideshow-dots .dot.active {
+  background-color: #13f00f;
+}
+.about-abirospowerventures-container {
+  display: flex;
+  width: 100%
+  height: 1000px;
+  border-bottom: 0.5px solid grey;
+}
+@media (max-width: 850px) {
+  .about-abirospowerventures-container {
+    flex-direction: column;
+    width: 100%
+    height: 100%;
+  }
+}
+.company-logo {
+  width: 40%;
+  height: 100%;
+  padding-left: 60px;
+  padding-top: 50px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+@media (max-width: 850px) {
+  .company-logo {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .company-logo img {
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.company-logo img {
+  width: 80%;
+  border-radius: 50%;
+}
+.abirospowerventures-description {
+  width: 60%;
+  padding-top: 100px;
+  padding-right: 80px;
+  padding-left: 20px;
+  text-align: justify;
+}
+@media (max-width: 850px) {
+  .abirospowerventures-description {
+    width: 100%;
+    padding-top: 0;
+    padding-right: 60px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .abirospowerventures-description h2 {
+    transform: scale(0.8);
+  }
+}
+.abirospowerventures-description h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.abirospowerventures-description span {
+  color: #fc0334;
+}
+.abirospowerventures-description button {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  cursor: pointer;
+}
+.vision-mission-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  padding-left: 60px;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+@media (max-width: 850px) {
+  .vision-mission-container {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+  .vision-mission-container h2 {
+    transform: scale(0.8);
+  }
+}
+.vision-mission-container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.vision-mission {
+  width: 60%;
+  padding-right: 80px;
+  margin-top: 60px;
+}
+@media (max-width: 850px) {
+  .vision-mission {
+    width: 100%;
+    padding-right: 60px;
+    margin-top: 10px;
+  }
+}
+.vision-mission span {
+  color: #fc0334;
+}
+.vision-mission .vision {
+  margin-bottom: 40px;
+}
+.vision-mission-image {
+  width: 40%;
+  padding-bottom: 30px;
+}
+@media (max-width: 850px) {
+  .vision-mission-image {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .vision-mission-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.vision-mission-image img {
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: #ffffff;
+  background-color: #14073e;
+}

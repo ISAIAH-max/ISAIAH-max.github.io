@@ -1,0 +1,140 @@
+.main-container-service {
+  width: 100%;
+  height: 100%;
+}
+.main-container-service-background-image {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (min-width: 0) and (max-width: 850px) {
+
+  .main-container-service {
+    width: 100%;
+    height: 100%;
+  }
+  .main-container-service-background-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+}
+.main-container-service-background-image .service-title {
+  position: absolute;
+  bottom: -25px;
+  margin-left: 60px;
+  font-size: 50px;
+  color: #ffffff;
+  overflow: hidden;
+
+  animation: service-title-animation 3s;
+}
+@keyframes service-title-animation {
+  0%{bottom: -80px;}
+  100%{bottom: -25px;}
+}
+@media (min-width: 0) and (max-width: 850px) {
+  .main-container-service-background-image .service-title {
+    position: absolute;
+    bottom: -10px;
+    margin-left: 30%;
+    font-size: 15px;
+    color: #ffffff;
+    overflow: hidden;
+
+    animation: service-title-animation 3s;
+  }
+  @keyframes service-title-animation {
+    0%{bottom: -40px;}
+    100%{bottom: -10px;}
+  }
+}
+.main-container-service-description-container {
+  display: flex;
+  width: 100%;
+  height: 500px;
+}
+.main-container-service-description-container .service-description {
+  flex: 1;
+  height: 100%;
+  padding-top: 47px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 60px;
+}
+.service-description .description-paragraphs {
+  position: absolute;
+  width: 100%;
+  padding-left: 60px;
+  line-height: 28px;
+  text-align: justify;
+  animation: fly-in 1s ease-out forwards;
+}
+@keyframes fly-in {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.main-container-service-description-container .service-description-image {
+  flex: 1;
+  height: 100%;
+  padding-top: 47px;
+  text-align: center;
+}
+.main-container-service-description-container .service-description-image img {
+  border-radius: 10px;
+  height: 75%;
+}
+@media (min-width: 0) and (max-width: 850px) {
+  .main-container-service-description-container {
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+  }
+  .main-container-service-description-container .service-description {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-description .description-paragraphs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    line-height: 23px;
+    text-align: justify;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 50px;
+    animation: fly-in 1s ease-out forwards;
+  }
+  @keyframes fly-in {
+    0% {
+      left: -150%;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  .main-container-service-description-container .service-description-image {
+  }
+  .service-description-image {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-container-service-description-container .service-description-image img {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
