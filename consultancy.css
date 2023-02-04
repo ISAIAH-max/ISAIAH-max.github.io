@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   position: relative;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 750px) {
 
   .main-container-service {
     width: 100%;
@@ -36,7 +36,7 @@
   0%{bottom: -80px;}
   100%{bottom: -25px;}
 }
-@media (min-width: 0) and (max-width: 850px) {
+@media screen and (max-width: 750px) {
   .main-container-service-background-image .service-title {
     position: absolute;
     bottom: -10px;
@@ -91,7 +91,7 @@
   border-radius: 10px;
   height: 75%;
 }
-@media (min-width: 0) and (max-width: 850px) {
+@media screen and (max-width: 750px) {
   .main-container-service-description-container {
     flex-direction: column;
     width: 100%;
