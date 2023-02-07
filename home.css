@@ -353,7 +353,6 @@ main {
   padding-top: 50px;
   margin-bottom: 30px;
   text-align: justify;
-  border: 3px solid blue;
 }
 @media screen and (max-width: 750px) {
   .vision-mission-container {
@@ -363,7 +362,6 @@ main {
     padding-left: 30px;
     padding-top: 0;
     margin-bottom: 30px;
-    border: 2px solid green;
   }
   .vision-mission-container h2 {
     transform: scale(0.8);
