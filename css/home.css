@@ -416,3 +416,9 @@ footer {
   color: #ffffff;
   background-color: #14073e;
 }
+@media screen and (max-width: 750px) {
+  footer {
+    di
+    text-align: center;
+  }
+}
