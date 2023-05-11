@@ -31,9 +31,15 @@
 .fa {
   font-size: 30px;
 }
+.fa.fa-whatsapp {
+  color: #075E54;
+}
 
 .form-container {
   margin-bottom: 30px;
+}
+.fa.fa-envelope {
+  color: blue;
 }
 
 #form label {
